@@ -4,9 +4,11 @@
     <%- @getBlock("meta").toHTML() %>
     <%- @getBlock("styles").toHTML() %>
     <%- @getBlock("styles").add(["/styles/stylesheet.css"]).toHTML() %>
+    <%- @getBlock("scripts").add(["/vendor/jquery.js","/scripts/scripts.js"]).toHTML() %>
+    <link href='https://fonts.googleapis.com/css?family=Raleway|Fjalla+One|Maven+Pro' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <h1><%= @document.title %></h1>
+    <h1><%= @document.title if @document.title != "Home" %></h1>
     <%- @content %>
     <%- @getBlock("scripts").toHTML() %>
 </body>

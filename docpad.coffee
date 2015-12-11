@@ -4,6 +4,7 @@
 # Define the DocPad Configuration
 docpadConfig = {
 	outPath: '.'
+	filePaths: 'static'
 }
 
 # Export the DocPad Configuration

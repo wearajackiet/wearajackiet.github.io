@@ -12,11 +12,78 @@
 	opacity: 0;
 	transition: opacity 0.5s ease;
 }</style><link  rel="stylesheet" href="/styles/stylesheet.css" />
+    <script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/docpad-livereload/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.js"></script><script defer="defer"  src="/scripts/scripts.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Raleway|Fjalla+One|Maven+Pro' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <h1>Home</h1>
-    <p>Hello world!</p>
-<p>Howdy do</p>
+    <h1></h1>
+    <div class="container">
+	<div class="content">
+		<div class="name">Jackie Tseng</div>
+		<div class="about">
+			<div class="job">Software Engineer
+				<div class="important">Amazon Appstore</div>
+			</div>
+			<div class="school">Computer Science<br>Technology Management
+				<div class="important">University of California Davis</div>
+			</div>
+		</div>
+		<div class="links">
+			<ul class="links-list">
+				<li class="social"><a href="/assets/Resume_JaclynTseng.pdf"><img src="/assets/social/resume.png" alt=""></a></li>
+				<li class="social"><a href="https://www.linkedin.com/in/jaclyntseng"><img src="/assets/social/linkedin.png" alt=""></a></li>
+				<li class="social"><a href="https://www.github.com/wearajackiet"><img src="/assets/social/github.png" alt=""></a></li>
+				<li class="social"><a href="mailto:jwttseng@ucdavis.edu"><img src="/assets/social/mail.png" alt=""></a></li>
+				<li class="social"><a href="http://www.instagram.com/wearajackiet"><img src="/assets/social/instagram.png" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
     <script >(function(){
 	/* Did we just livereload? */
 var log = !!(localStorage && console && console.log && true);
