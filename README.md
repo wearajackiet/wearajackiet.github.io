@@ -6,3 +6,4 @@
 * [Coffeescript Plugin](https://github.com/Xavura/CoffeeScript-Sublime-Plugin)
 * [Emmet](http://emmet.io/)
 * [Icons](http://ionicons.com/)
+* [GH-Pages Plugin](http://seethroughtrees.github.io/posts/github-pages-with-docpad/)
