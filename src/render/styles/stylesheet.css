@@ -1,5 +1,5 @@
 body {
-	background-image: url("/assets/slideshow/HongKong1.jpg");
+	background-image: url("http://i.imgur.com/YV90nuE.jpg");
 	background-size: cover;
 }
 
@@ -11,7 +11,7 @@ body {
 	width: 400px;
 	height: 300px;
 	background-color: black;
-	opacity: 0.6;
+	opacity: 0.5;
 	padding: 15px;
 }
 
