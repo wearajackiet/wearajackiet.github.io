@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jackie's Foodie List</title>
+	<style type="text/css">
+		.visited {
+			text-decoration: line-through;
+			color: red !important;
+		}
+		.westcoast {
+			color: blue;
+		}
+		.soon {
+			color: green !important;
+		}
+	</style>
+	<script type="text/javascript">
+		var total = document.getElementsByClassName('visited').length
+		var t = document.getElementById('total');
+		console.log(document.getElementsByClassName('visited'));
+	</script>
+</head>
+<body>
+	<h2>2014 List</h2>
+	<ol>
+		<li>Da Poke Shack, Kailua-Kona, HI</li>
+		<li class="westcoast visited">Paseo, Seattle, WA</li>
+		<li>Oklahoma Joe’s Barbecue, Kansas City, KS</li>
+		<li>The Cinnamon Snail, New York, NY</li>
+		<li class="westcoast soon">Porto's Bakery, Burbank, CA</li>
+		<li class="westcoast">Dametra Cafe, Carmel by the Sea, CA</li>
+		<li>Alinea, Chicago, IL</li>
+		<li>Franklin Barbecue, Austin, TX</li>
+		<li class="westcoast">Gary Danko, San Francisco, CA</li>
+		<li class="westcoast soon">Joe’s Falafel, Los Angeles, CA</li>
+		<li>Sushi Izakaya Gaku, Honolulu, HI</li>
+		<li>Biker Jim’s Gourmet Dogs, Denver, CO</li>
+		<li class="westcoast visited">Oscar’s Mexican Seafood, San Diego, CA</li>
+		<li class="westcoast">Coop’s West Texas Barbeque, Lemon Grove, CA</li>
+		<li class="westcoast soon">Tacos El Gordo, Chula Vista, CA</li>
+		<li class="westcoast soon">Cheese Board Pizza, Berkeley, CA</li>
+		<li class="westcoast soon">Ricky’s Fish Tacos, Los Angeles, CA</li>
+		<li>Ono Seafood, Honolulu, HI</li>
+		<li>Bogart’s Smoke House, Saint Louis, MO</li>
+		<li class="westcoast">Bakery Nouveau, Seattle, WA</li>
+		<li class="westcoast">Baguette Cafe, Las Vegas, NV</li>
+		<li>Eleven Madison Park, New York, NY</li>
+		<li class="westcoast soon">T-Deli, San Diego, CA</li>
+		<li class="westcoast">Built to Grill, Portland, OR</li>
+		<li class="westcoast">Alforon, San Diego, CA</li>
+		<li>Daniel, New York, NY</li>
+		<li>Hot Doug’s, Chicago, IL</li>
+		<li>Sal, Kris, &amp; Charlie’s Deli, Astoria, NY</li>
+		<li>Blues City Deli, Saint Louis, MO</li>
+		<li class="westcoast">The Kitchen Restaurant, Sacramento, CA</li>
+		<li class="westcoast visited">Cream Pan, Tustin, CA</li>
+		<li>Dave’s Fresh Pasta, Somerville, MA</li>
+		<li class="westcoast">Café Besalu, Seattle, WA</li>
+		<li class="westcoast">The French Laundry, Yountville, CA</li>
+		<li>Turf N' Surf Po Boy, Austin, TX</li>
+		<li class="westcoast">Café Rolle, Sacramento, CA</li>
+		<li>Chama Gaucha Brazilian Steakhouse, Downers Grove, IL</li>
+		<li class="westcoast soon">Yoshino Japanese Deli, Carlsbad, CA</li>
+		<li>Opal Thai Food, Haleiwa, HI</li>
+		<li class="westcoast soon">Lou’s Cafe, San Francisco, CA</li>
+		<li>Marukame Udon, Honolulu, HI</li>
+		<li>Monell’s Dining &amp; Catering, Nashville, TN</li>
+		<li class="westcoast soon">Roxie Food Center, San Francisco, CA</li>
+		<li>Graham Avenue Meats And Deli, Brooklyn, NY</li>
+		<li>Le Bernardin, New York, NY</li>
+		<li class="westcoast soon">El Chato Taco Truck, Los Angeles, CA</li>
+		<li class="westcoast">Gyros, Seattle, WA</li>
+		<li class="westcoast visited">The Waffle Window, Portland, OR</li>
+		<li>Per Se, New York, NY</li>
+		<li>Geste Shrimp Truck, Kahului, HI</li>
+		<li class="westcoast soon">Frostbites Crepes &amp; Frozen Delights, Cypress, CA</li>
+		<li class="westcoast soon">Sushi Ota, San Diego, CA</li>
+		<li class="westcoast">Arizmendi Bakery, San Francisco, CA</li>
+		<li class="westcoast soon">Sweet Potato Stall, Santa Clara, CA</li>
+		<li>Gramercy Tavern, New York, NY</li>
+		<li class="westcoast soon">Peter’s Kettle Corn, Oakland, CA</li>
+		<li class="westcoast">Johnny Pacific, Winnetka, CA</li>
+		<li>El Chilango, Arlington, VA</li>
+		<li class="westcoast soon">Ike’s Place, San Francisco, CA</li>
+		<li class="westcoast">Fishermen’s Grill, Portland, ME</li>
+		<li>Sabroso! Mexican Grill, Garden Grove, CA</li>
+		<li class="westcoast soon">District Wine, Long Beach, CA</li>
+		<li>Chama Gaúcha Brazilian Steakhouse, Houston, TX</li>
+		<li class="westcoast">Bludso’s BBQ, Compton, CA</li>
+		<li class="westcoast visited">Tiki Juice Bar, Anaheim, CA</li>
+		<li class="westcoast">Wally’s Cafe, Emeryville, CA</li>
+		<li class="westcoast">Vinh Loi Tofu, Reseda, CA</li>
+		<li class="westcoast soon">Mama D’s Italian Kitchen, Newport Beach, CA</li>
+		<li>Los Andes Restaurant, Providence, RI</li>
+		<li class="westcoast visited">Little Luca Sandwich Shop &amp; Deli, South San Francisco, CA</li>
+		<li>Pho 95, Denver, CO</li>
+		<li>Garbo’s Grill, Key West, FL</li>
+		<li>Ono Tacos, Lahaina, HI</li>
+		<li class="westcoast soon">Mattern Sausage &amp; Deli, Orange, CA</li>
+		<li class="westcoast">The Market Grill, Monrovia, CA</li>
+		<li class="westcoast soon">Urasawa, Beverly Hills, CA</li>
+		<li>Dat Cajun Guy, Haleiwa, HI</li>
+		<li class="westcoast visited">Los Agaves, Santa Barbara, CA</li>
+		<li class="westcoast soon">Outlaws Cafe, Van Nuys, CA</li>
+		<li>Gus’s World Famous Hot &amp; Spicy Chicken, Memphis, TN</li>
+		<li>Short Leash Dogs Food Truck, Phoenix, AZ</li>
+		<li>Pono Market, Kapaa, HI</li>
+		<li>Wafels &amp; Dinges, New York, NY</li>
+		<li class="westcoast">Bell Street Farm, Los Alamos, CA</li>
+		<li>Uchiko, Austin, TX</li>
+		<li>Little Deli &amp; Pizzeria, Austin, TX</li>
+		<li class="westcoast">Kokkari Estiatorio, San Francisco, CA</li>
+		<li class="westcoast soon">Kang Hodong Baekjeong, Los Angeles, CA</li>
+		<li>Komi, Washington, DC</li>
+		<li class="westcoast">Stuff I Eat, Inglewood, CA</li>
+		<li>Taste of Ethiopia, Pflugerville, TX</li>
+		<li class="westcoast">Hy Mart Sandwiches, North Hollywood, CA</li>
+		<li class="westcoast">The Codmother Fish and Chips, San Francisco, CA</li>
+		<li class="westcoast">Mastro’s Steakhouse, Beverly Hills, CA</li>
+		<li>Sushi Sasabune, Honolulu, HI</li>
+		<li>Bern’s Steak House, Tampa, FL</li>
+		<li>Postino Arcadia, Phoenix, AZ</li>
+		<li>Pappy’s Smokehouse, Saint Louis, MO</li>
+		<li>Uchi, Austin, TX</li>
+		<li class="westcoast">Zia Gourmet Pizza, San Diego, CA</li>
+	</ol>
+	<h2>2015 List</h2>
+	<ol>
+		<li class="westcoast">Copper Top BBQ – Big Pine, CA</li>
+		<li class="westcoast">Art of Flavors – Las Vegas, NV</li>
+		<li class="westcoast">Soho Japanese Restaurant – Las Vegas, NV</li>
+		<li class="westcoast">TKB Bakery and Deli – Indio, CA</li>
+		<li>Ono Seafood – Honolulu, HI</li>
+		<li>Shark Pit Maui – Lahaina, HI</li>
+		<li>Gaucho Parilla Argentina – Pittsburgh, PA</li>
+		<li class="westcoast visited">Bobboi Natural Gelato – La Jolla, CA</li>
+		<li class="westcoast">Golden Bear Trading Company – San Francisco, CA</li>
+		<li>Little Miss BBQ – Phoenix, AZ</li>
+		<li>Dat Cajun Guy – Haleiwa, HI</li>
+		<li>Sweet Dogs – Miami, FL</li>
+		<li>Aviva by Kameel – Atlanta, GA</li>
+		<li>Sweet Spice – Savannah, GA</li>
+		<li>Royal Taj – Columbia, MD</li>
+		<li>Arun's Indian Kichen – Coral Spring, FL</li>
+		<li>Hall's Chophouse – Charleston, SC</li>
+		<li class="westcoast">Bronze Cafe – Las Vegas, NV</li>
+		<li class="westcoast visited">Saffron and Rose Ice Cream – Los Angeles, CA</li>
+		<li class="westcoast visited">Buddha Thai Bistro – Vacaville, CA</li>
+		<li class="westcoast soon">Yoshino Japanese Deli – Carlsbad, CA</li>
+		<li class="westcoast">Big Al's Pizzeria – Maywood, CA</li>
+		<li class="westcoast soon">Andytown Coffee Roasters – San Francisco, CA</li>
+		<li class="westcoast soon">Kech Cafe – Fountain Valley, CA</li>
+		<li>Joe's Kansas City Bar-B-Que – Kansas City, KS</li>
+		<li>Los Andes Restaurant – Providence, RI</li>
+		<li>Lahaina Luna Cafe – Lahaina, HI</li>
+		<li class="westcoast">Bell Street Farm – Los Alamos, CA</li>
+		<li class="westcoast soon">Tacos El Gordo De Tijuana BC – Chula Vista, CA</li>
+		<li>Detroit Coney Grill – Tempe, AZ</li>
+		<li class="westcoast soon">Sessions West Coast Deli – Newport Beach, CA</li>
+		<li class="westcoast">Baguette Cafe – Las Vegas, NV</li>
+		<li class="westcoast">Carrara Pastries – Moorpark, CA</li>
+		<li>Bogart's Smokehouse – Saint Louis, MO</li>
+		<li>Reading Terminal Market – Philadelphia, PA</li>
+		<li>Piperi Mediterranean Grill – Boston, MA</li>
+		<li>Kitchen Table Cafe – Denver, CO</li>
+		<li>Mood Cafe – Philadelphia, PA</li>
+		<li>Santos Lucha Libre – Phoenix, AZ</li>
+		<li class="westcoast soon">Porto's Bakery – Burbank, CA</li>
+		<li class="westcoast">El Dorado Cantina - Las Vegas, NV</li>
+		<li class="westcoast visited">Jougert Bar – Burlingame, CA</li>
+		<li>Araya's Place Thai Vegan Restaurant – Los Angeles, CA</li>
+		<li class="westcoast soon">Joe's Falafel – Los Angeles, CA</li>
+		<li>Persimmon Cafe – Charleston, SC</li>
+		<li>Beiler's Bakery – Philadelphia, PA</li>
+		<li class="westcoast soon">Starbread – Sacramento, CA</li>
+		<li>Kersmon Caribbean Restaurant – Greenacres, FL</li>
+		<li class="westcoast">Vitality Tap – San Diego, CA</li>
+		<li>Chama Gaucha Brazilian Steakhouse – Downers Grove, IL</li>
+		<li>Da Poke Shack - Kailua Kona, HI</li>
+		<li class="westcoast soon">Poke Express – Las Vegas, NV</li>
+		<li>Marukame Udon – Honolulu, HI</li>
+		<li class="westcoast soon">Bronzed Aussie – Los Angeles, CA</li>
+		<li>Bite Into Maine – Cape Elizabeth, ME</li>
+		<li>Franklin Barbecue – Austin, TX</li>
+		<li class="westcoast soon">Eddie V's Prime Seafood – San Diego, CA</li>
+		<li>You Gonna Eat or What? – Austin, TX</li>
+		<li class="westcoast soon">Mama D's Italian Kitchen – Newport Beach, CA</li>
+		<li class="westcoast soon">Outlaws Cafe – Van Nuys, CA</li>
+		<li class="westcoast soon">Subculture Extraordinary Sandwiches – Huntington Beach, CA</li>
+		<li class="westcoast soon">Go Greek Yogurt – Beverly Hills, CA</li>
+		<li class="westcoast">Ninja Sushi and Teriyaki – Roseville, CA</li>
+		<li class="westcoast visited">Los Agaves – Santa Barbara, CA</li>
+		<li>Sal, Kris, &amp; Charlie's Deli – Astoria, NY</li>
+		<li class="westcoast soon">Genie Den – Garden Grove, CA</li>
+		<li>Garbo's Grill – Key West, FL</li>
+		<li class="westcoast soon">T-Deli – San Diego, CA</li>
+		<li>Rose's Luxury – Washington, DC</li>
+		<li class="westcoast soon">Embargo Grill – San Diego, CA</li>
+		<li>Your Kitchen – Honolulu, HI</li>
+		<li class="westcoast">LouEddie's Pizza – Skyforest, CA</li>
+		<li>Blues City Deli – Saint Louis, MO</li>
+		<li class="westcoast">Dametra Cafe – Carmel, CA</li>
+		<li class="westcoast">Nick's Next Door – Los Gatos, CA</li>
+		<li class="westcoast">Don Julio's Rincon Latin Grill and Pupusas – Rohnert Park, CA</li>
+		<li class="westcoast">Mama's – Las Vegas, NV</li>
+		<li>Los Tacos No. 1 – New York, NY</li>
+		<li class="westcoast">Beyer Deli – San Diego, CA</li>
+		<li>Mojo Donuts – Pembroke Pines, FL</li>
+		<li class="westcoast soon">Peter's Kettle Corn – Oakland, CA</li>
+		<li class="westcoast soon">The Pocket Burger Shack – Sunset Beach, CA</li>
+		<li class="westcoast">Mouthful Eatery – Thousand Oaks, CA</li>
+		<li class="westcoast">Playground 2.0 – Santa Ana, CA</li>
+		<li>Monell's Dining &amp; Catering – Nashville, TN</li>
+		<li>Zenwich – Elmhurst, IL</li>
+		<li class="westcoast soon">Commonwealth Restaurant – Burbank, CA</li>
+		<li class="westcoast soon">Istanbul Grill California – Fountain Valley, CA</li>
+		<li class="westcoast soon">Mister Falafel – San Diego, CA</li>
+		<li>Vietnam Poblano – Houston, TX</li>
+		<li>Tanioka's Seafoods &amp; Catering – Waipahu, HI</li>
+		<li class="westcoast">Yak's On The 5 – Dunsmuir, CA</li>
+		<li>Titas Taco House – Humble, TX</li>
+		<li>Pomo Pizzeria Napoletana – Phoenix, AZ</li>
+		<li>Eli's BBQ – Cincinnati, OH</li>
+		<li class="westcoast">Johnny Pacific – Winnetka, CA</li>
+		<li>The Cinnamon Snail – New York, NY</li>
+		<li>Cafe la Maude – Philadelphia, PA</li>
+		<li class="westcoast visited">Cream Pan – Tustin, CA</li>
+		<li>Pi-Hi Cafe – Chicago, IL</li>
+	</ol>
+
+	<div id="total"></div>
+</body>
+</html>
