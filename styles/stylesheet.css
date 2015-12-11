@@ -1,5 +1,5 @@
 body {
-	background-image: url("/assets/slideshow/SanDiego1.jpg");
+	background-image: url("http://i.imgur.com/YV90nuE.jpg");
 	background-size: cover;
 }
 
@@ -23,6 +23,7 @@ body {
 	text-align: center;
 	color: white;
 	width: 100%;
+	opacity: 0.8;
 }
 
 .name {
