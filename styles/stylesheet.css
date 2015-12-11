@@ -1,5 +1,5 @@
 body {
-	background-image: url("http://i.imgur.com/YV90nuE.jpg");
+	background-image: url("/assets/slideshow/HongKong1.jpg");
 	background-size: cover;
 }
 
@@ -22,7 +22,7 @@ body {
 	transform: translate(-50%, -50%);
 	text-align: center;
 	color: white;
-	width: 100%;
+	width: 400px;
 	opacity: 0.8;
 }
 
