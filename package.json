@@ -1,7 +1,7 @@
 {
-  "name": "no-skeleton.docpad",
+  "name": "jackietseng.com",
   "version": "0.1.0",
-  "description": "New DocPad project without using a skeleton",
+  "description": "Personal website!",
   "dependencies": {
     "docpad": "~6.78.4",
     "docpad-plugin-eco": "~2.1.0",
