@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title> <%= @document.title + "| " if @document.title != "Foodie" %>Foodie | Jackie Tseng</title>
+    <%- @getBlock("meta").toHTML() %>
+    <%- @getBlock("styles").toHTML() %>
+    <%- @getBlock("styles").add(["/styles/jackieis.css"]).toHTML() %>
+    <%- @getBlock("scripts").add(["/vendor/jquery.js","/scripts/scripts.js"]).toHTML() %>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600|Quicksand:400,600|Fjalla+One|Maven+Pro' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="jackie-is-block">
+        Jackie is a
+        <div class="jackie-is">
+            <% if @document.link: %>
+                <a href="<%= @document.link %>"><%= @document.title %></a>.
+            <% else: %>
+                <%= @document.title %>.
+            <% end %>
+        </div>
+    </div>
+    <%- @content %>
+    <%- @getBlock("scripts").toHTML() %>
+</body>
+</html>
