@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title> <%= @document.title + "| " if @document.title != "Foodie" %>Foodie | Jackie Tseng</title>
+    <title> <%= @document.title %> | Jackie Tseng</title>
     <%- @getBlock("meta").toHTML() %>
     <%- @getBlock("styles").toHTML() %>
     <%- @getBlock("styles").add(["/styles/jackieis.css"]).toHTML() %>

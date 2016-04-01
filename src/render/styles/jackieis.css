@@ -93,3 +93,17 @@ a {
 	color: white;
 }
 
+.free {
+	color: white !important;
+}
+
+.busyPage li {
+	color: #004545;
+}
+
+.busyPage {
+	padding: 20px;
+	background-color: #008080;
+	font-family: "Maven Pro", sans-serif;
+	line-height: 23px;
+}
