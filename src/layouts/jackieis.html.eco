@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="jackie-is-block">
-        Jackie is a
+        Jackie is<%= " a" if @document.pos != "adjective" %>
         <div class="jackie-is">
             <% if @document.link: %>
                 <a href="<%= @document.link %>"><%= @document.title %></a>.
