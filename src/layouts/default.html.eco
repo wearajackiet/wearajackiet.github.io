@@ -5,6 +5,7 @@
     <%- @getBlock("styles").toHTML() %>
     <%- @getBlock("styles").add(["/styles/stylesheet.css"]).toHTML() %>
     <%- @getBlock("scripts").add(["/vendor/jquery.js","/scripts/scripts.js"]).toHTML() %>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link href='https://fonts.googleapis.com/css?family=Raleway|Fjalla+One|Maven+Pro' rel='stylesheet' type='text/css'>
 </head>
 <body>

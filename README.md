@@ -7,3 +7,4 @@
 * [Emmet](http://emmet.io/)
 * [Icons](http://ionicons.com/)
 * [GH-Pages Plugin](https://github.com/docpad/docpad-plugin-ghpages)
+* [MongoDB Plugin](https://www.npmjs.com/package/docpad-plugin-mongodb)

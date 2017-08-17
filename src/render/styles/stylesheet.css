@@ -1,6 +1,5 @@
 body {
-	background-image: url("http://i.imgur.com/WUq1hWh.jpg");
-	/* pick something from http://imgur.com/a/RNvhG */
+	background-image: url("/assets/photos/background.jpg");
 	background-size: cover;
 }
 
@@ -38,6 +37,8 @@ body {
 .about {
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
 }
 
 .important {
@@ -56,9 +57,9 @@ body {
 
 .social {
 	display: inline-block;
-	width: 30px;
+	width: 35px;
 }
 
 .social img {
-	width: 30px;
+	width: 35px;
 }
