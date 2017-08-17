@@ -8,8 +8,11 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link href='https://fonts.googleapis.com/css?family=Raleway|Fjalla+One|Maven+Pro' rel='stylesheet' type='text/css'>
 </head>
-<body>
-    <h1><%= @document.title if @document.title != "Home" %></h1>
+<% if @document.title != "Home": %>
+	<body>
+<% else: %>
+	<body style="background-image:url('http://i.imgur.com/WUq1hWh.jpg'); background-size:cover;">
+<% end %>
     <%- @content %>
     <%- @getBlock("scripts").toHTML() %>
 </body>
