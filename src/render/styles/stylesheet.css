@@ -1,9 +1,6 @@
 body {
-	background-image: url("/assets/photos/background.jpg");
-/*body {
 	background-image: url("http://i.imgur.com/WUq1hWh.jpg");
-	 pick something from http://imgur.com/a/RNvhG 
-	background-size: cover;*/
+	background-size: cover;
 }
 
 .container {
@@ -52,13 +49,17 @@ body {
 	padding-bottom: 10px;
 }
 
+.school {
+	margin-top: 15px;
+}
+
 a {
 	color: white;
 	text-decoration: none;
 }
 
 .text-links {
-	margin-top: 15px;
+	margin: 15px 0 0 0;
 	font-family: 'Raleway', sans-serif;
 	font-size: 12px;
 	line-height: 16px;

@@ -11,7 +11,7 @@
 <% if @document.title != "Home": %>
 	<body>
 <% else: %>
-	<body style="background-image:url('https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/12317773_1171101749590506_630630175_n.jpg'); background-size:cover;">
+	<body>
 <% end %>
     <%- @content %>
     <%- @getBlock("scripts").toHTML() %>
